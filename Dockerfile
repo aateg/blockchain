@@ -1,4 +1,4 @@
-FROM python:3.6-alpine
+FROM python:3.8-alpine
 
 WORKDIR /app
 
@@ -9,6 +9,7 @@ RUN cd /app && \
 
 # Add actual source code.
 ADD blockchain.py /app
+ADD api.py /app
 
 EXPOSE 5000
 
